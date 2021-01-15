@@ -1,0 +1,198 @@
+#cross {
+  overflow: hidden;
+
+  .topBar {
+    width: 100%;
+    height: 88px;
+  }
+
+  ::v-deep #video {
+    width: 100vw;
+    height: 422px;
+
+    .qun-base-controls {
+      z-index: 10
+    }
+  }
+
+  .content {
+    overflow: scroll;
+    position: absolute;
+    top: 422px + 88px;
+    bottom: 0;
+    padding-bottom: 50px;
+
+    .videoInfo {
+      padding: 20px;
+      box-sizing: border-box;
+
+      .info {
+        width: 710px;
+        height: 80px;
+        margin: 20px auto 29px;
+        background: #F2F4F6;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 60px;
+          height: 60px;
+          margin: 0 30px 0 17px;
+          border-radius: 50%;
+          background: #EA592D;
+        }
+
+        .center {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          :nth-child(1) {
+            font-size: 24px;
+            font-family: PingFang SC;
+            font-weight: 600;
+            color: #1E1E28;
+          }
+
+          :nth-child(2) {
+            font-size: 20px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #A1A1B9;
+          }
+        }
+
+        .btn {
+          width: 100px;
+          height: 40px;
+          vertical-align: middle;
+          margin-right: 20px;
+          background: #EA592D;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 24px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #FFFFFF;
+          }
+
+        }
+      }
+
+      .describe {
+        line-height: 42px;
+        font-size: 28px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #1E1E28;
+      }
+
+      .btnGroup {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 20px 0;
+
+        .btn {
+          width: 160px;
+          height: 50px;
+          border: 1px solid #EEEEF9;
+          border-radius: 25px;
+          font-size: 24px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #606071;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .icon {
+          width: 28px;
+          height: 28px;
+        }
+
+        .btnIcon {
+          color: #606071;
+        }
+
+        span {
+          margin-left: 20px;
+        }
+      }
+
+    }
+
+    .line {
+      height: 20px;
+      background-color: #F2F4F6;
+    }
+
+    .vedioList {
+      margin: 0 54px 0 20px;
+
+      .li {
+        padding: 20px 0;
+        border-bottom: 1px solid #EEEEEE;
+        display: flex;
+
+        .left {
+          width: 220px;
+          height: 124px;
+          margin-right: 25px;
+          background-color: #555555;
+          border-radius: 4px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .right {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+
+          .title {
+            line-height: 36px;
+            font-size: 24px;
+            font-family: PingFang SC;
+            font-weight: 400;
+            color: #1E1E28;
+          }
+
+          .btnGroup {
+            display: flex;
+
+            .btn {
+              margin-right: 40px;
+              font-size: 18px;
+              font-family: PingFang SC;
+              font-weight: 400;
+              color: #A1A1B9;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .icon {
+                width: 24px;
+                height: 24px;
+              }
+
+              span {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

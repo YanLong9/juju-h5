@@ -1,0 +1,175 @@
+#vertical {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .topBar {
+    width: 100%;
+    height: 88px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    background: #1E1E28;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      max-width: 80%;
+      flex-grow: 1;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 80px;
+        height: 40px;
+        margin-right: 27px;
+        background: #1E1E28;
+      }
+
+      >div {
+        flex-shrink: 0;
+        flex-grow: 0;
+        width: 70%;
+        display: block;
+        font-size: 24px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #FFFFFF;
+      }
+    }
+
+    .btn {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 130px;
+      height: 48px;
+      background: #EA592D;
+      border-radius: 24px;
+
+      span {
+        font-size: 20px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  ::v-deep #video {
+    height: calc(100vh - 88px);
+
+    .qun-base-controls {
+      z-index: 10
+    }
+
+    ._fullscreen {
+      display: none;
+    }
+  }
+
+  .tool {
+    width: 100px;
+    position: fixed;
+    right: 33px;
+    bottom: 209px;
+
+
+    .head {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 50px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background: red;
+      position: relative;
+
+      .avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .add {
+        position: absolute;
+        bottom: -18px;
+        left: 47px - 18px;
+        width: 36px;
+        height: 36px;
+        background: #EA592D;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+          color: #FFFFFF;
+          font-size: 22px;
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 50px;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .iconBox {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          color: #FFFFFF;
+          font-size: 60px;
+        }
+      }
+
+      .tip {
+        font-size: 24px;
+        font-family: PingFang SC;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .info {
+    height: 120px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: PingFang SC;
+    color: #FFFFFF;
+    position: fixed;
+    left: 30px;
+    bottom: 78px;
+
+    .name {
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .description {}
+  }
+}

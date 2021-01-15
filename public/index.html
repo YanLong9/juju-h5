@@ -1,0 +1,47 @@
+<!--
+ * @Description: 文件描述
+ * @Author: wjk
+ * @Date: 2020-11-02 14:22:43
+ * @LastEditors: wjk
+ * @LastEditTime: 2020-11-18 15:56:15
+ * @FilePath: \jushipin-h5\public\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+  <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+  <!-- 解决微信公众号网页缓存问题,配合后台negix服务器配置 -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <!-- 使用了该meta，解决了vant-ui组件库中的px问题，也就是项目中遇到的下拉刷新成功状态会被遮住一半的问题 -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <!-- 图标 -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <!-- 标题 -->
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <script type="text/javascript" charset="utf-8" src="//at.alicdn.com/t/font_221716_l8fh02wkpj.js"></script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <!-- 移动端调试工具erude -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script>
+    eruda.init();
+  </script> -->
+</body>
+
+</html>
